@@ -21,7 +21,7 @@ def main():
 
     get_parameter_name = 'domain_name'
 
-    # TODO: Parse GET parameter 'domain_name' from query string and store it in this variable 'domain_name'
+    # TODO DONE: Parse GET parameter 'domain_name' from query string and store it in this variable 'domain_name'
     domain_name = request.args.get(get_parameter_name)
 
     # If GET parameter is not empty, call lookup(), otherwise do nothing
@@ -34,7 +34,7 @@ def main():
 def lookup(destination):
 
 
-    # TODO: Let the server perform a DNS lookup for the domain name in 'destination'
+    # TODO DONE: Let the server perform a DNS lookup for the domain name in 'destination'
     cmd = 'nslookup ' + destination
 
     sanitized_destination = ''.join(c for c in destination if c.isalnum() or c in ['.', '-'])
@@ -42,7 +42,7 @@ def lookup(destination):
     cmd = "nslookup {}".format(sanitized_destination)
     args = shlex.split(cmd)
 
-    # TODO: Return the output of the command as a string to be displayed on the page
+    # TODO DONE: Return the output of the command as a string to be displayed on the page
     output = ""
 
     try:
