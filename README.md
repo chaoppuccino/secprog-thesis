@@ -3,7 +3,7 @@
 This repository contains the files used for David Mierzwinskis masters thesis.
 
 
-`tasks/` : contains incomplete files to be worked on by study participants.
+`tasks/` : contains actual tasks to be worked on by study participants. Sections marked with #TODO are mainly where participants fill in code. 
 
 `tasks/board.py`: Analyzes XSS (https://cwe.mitre.org/data/definitions/79.html), SQL Injection (https://cwe.mitre.org/data/definitions/89.html)
 
