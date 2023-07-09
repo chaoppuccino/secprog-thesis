@@ -28,10 +28,10 @@ def main():
 
     if request.method == 'POST':
 
-        # TODO: Parse form data 'employee_id' from POST request and store it in this variable 'employee_id'
+        # TODO DONE: Parse form data 'employee_id' from POST request and store it in this variable 'employee_id'
         employee_id = request.form['employee_id']
 
-        # TODO: Parse form data 'days' from POST request and store it in this variable 'days'
+        # TODO DONE: Parse form data 'days' from POST request and store it in this variable 'days'
         days = request.form['days']
 
         return output + str(do_employee(employee_id, days))
@@ -44,7 +44,7 @@ def do_employee(employee_id, vacation_days):
     conn = sqlite3.connect("database/server.db")
     cur = conn.cursor()
 
-    # TODO: Execute SQL statement to fetch 'name' and 'hourly_wage' of the employee based on the given 'employee_id' from the database.
+    # TODO DONE: Execute SQL statement to fetch 'name' and 'hourly_wage' of the employee based on the given 'employee_id' from the database.
     cur.execute("SELECT name, hourly_wage FROM employees WHERE e_id = ?", (employee_id,))
 
     # Format and display output
@@ -63,7 +63,7 @@ def calculate_cost_of_vacation_days(hourly_wage, number_of_days):
 
     cost = 0 
 
-    # TODO: Calculate cost of vacation based on employees hourly wage.
+    # TODO DONE: Calculate cost of vacation based on employees hourly wage.
     cost = number_of_days * 8 * hourly_wage
     if hourly_wage < 0:
         cost = 0
