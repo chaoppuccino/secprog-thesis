@@ -1,6 +1,8 @@
 # secprog-thesis-david
 
 This repository contains the files used for David Mierzwinskis masters thesis.
+
+
 `tasks/` : contains incomplete files to be worked on by study participants.
 
 `tasks/board.py`: Analyzes XSS (https://cwe.mitre.org/data/definitions/79.html), SQL Injection (https://cwe.mitre.org/data/definitions/89.html)
