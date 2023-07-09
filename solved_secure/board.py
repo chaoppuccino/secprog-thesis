@@ -32,7 +32,7 @@ def main():
     conn = sqlite3.connect("database/server.db")
     cur = conn.cursor()
 
-    # TODO: Execute SQL statement to fetch the content field of all messages from the database
+    # TODO DONE: Execute SQL statement to fetch the content field of all messages from the database
     cur.execute("SELECT content FROM messages ORDER BY id DESC ")
 
     # Format and display output
@@ -48,13 +48,13 @@ def main():
 @app.route('/new_message', methods=['POST'])
 def new_message():
 
-    # TODO: Parse form data 'message' from POST request and store it in this variable 'message'
+    # TODO DONE: Parse form data 'message' from POST request and store it in this variable 'message'
     message = request.form['message']
 
     conn = sqlite3.connect("database/server.db")
     cur = conn.cursor()
 
-    # TODO: Execute SQL statement to store the content of 'message' variable in the database
+    # TODO DONE: Execute SQL statement to store the content of 'message' variable in the database
     sanitized_input = html.escape(message)
     cur.execute("INSERT INTO messages (content) VALUES (?)", (sanitized_input, ))
 
