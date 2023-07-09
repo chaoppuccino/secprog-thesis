@@ -3,7 +3,7 @@
 This repository contains the files used for David Mierzwinskis masters thesis.
 
 
-`tasks/` : contains actual tasks to be worked on by study participants. Sections marked with #TODO are mainly where participants fill in code. 
+`tasks/` : contains actual tasks to be worked on by study participants. Sections marked with ```TODO``` are mainly where participants write code. 
 
 `tasks/board.py`: Analyzes XSS (https://cwe.mitre.org/data/definitions/79.html), SQL Injection (https://cwe.mitre.org/data/definitions/89.html)
 
@@ -11,4 +11,4 @@ This repository contains the files used for David Mierzwinskis masters thesis.
 
 `tasks/vacation.ps`: Analyzes Improper Input Validation (https://cwe.mitre.org/data/definitions/20.html), SQL Injection
 
-`solved_secure/`: Sample solution for every task, all functional and security requirements fulfilled
+`solved_secure/`: Sample solution for every task, all functional and security requirements are fulfilled.
