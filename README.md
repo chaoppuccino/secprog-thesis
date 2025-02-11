@@ -1,6 +1,6 @@
 # secprog-thesis-david
 
-This repository contains the files used for David Mierzwinskis masters thesis.
+This repository contains the files used for my masters thesis.
 
 
 `tasks/` : contains actual tasks to be worked on by study participants. Sections marked with ```TODO``` are mainly where participants write code. 
